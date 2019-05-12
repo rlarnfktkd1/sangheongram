@@ -10,3 +10,28 @@
     "dev": "nodemon --exec babel-node src/server.js --delay 2"
   }
 7. nodemon.json 파일안에 감시할 대상 적을 것.
+8. yarn add morgan
+ - GraphQLServer에는 express 서버가 내장되어 있음.
+ - 미들웨어 사용시 server.express.use();
+
+ typeDefs와 resolvers를 따로 분리하기 위해서
+ schema.js를 만들고 api폴더안에 resolvers와 typeDefs를 넣어놓는다.,
+ 그리고 서버에는 schema.js만으로 한다.
+ 도구: graphql-tools, merge-graphql-schemas 
+
+ Prisma - ORM(Object-relational mapping(객체 관계 연결))
+  - 데이터베이스 관련 어려운 문제들 해결해준다.
+   - 어플리케이션에 필요한 모델을 graphql로 정의 할 수 있는 점이 특별함
+  - 다른 종류의 orm으로는 typeorm, django orm, sequelize같은 ORM존재
+
+1. Prisma 사이트가서 로그인하기, 그리고 create Service클릭 npx npm install -g prisma로 설치
+2. 하단에 prisma 로그인 -k 복사해서 vde에서 복붙
+3. 로그인 성공하고나서 prisma init 하기(Demo Server 선택) - 체크 항목 확인후 체크
+4. 설치가 끝나면 generated폴더와 datamodel.prisma파일 생성됨.
+ - gitignore에 generated폴더 넣어주기
+5. 모델을 prisma에 추가하는 방법 - [prisma deploy]
+
+prisma 서버는 사용자들에게 절대 알려주면 안된다.
+
+graphql 파잃만 작성하면 resolver도 생성되고, 서버도 만들어지고 관리 패널도 만들어진다!
+ - prisma의 장점!
