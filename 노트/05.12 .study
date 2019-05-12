@@ -1,0 +1,12 @@
+1. Git repository생성(git ignore - node로 할 것)
+2. git clone으로 받아오기
+3. yarn init으로 project생성
+3.1 yarn add graphql-yoga
+3.2 yarn add nodemon -D
+4. yarn add @babel/{node,preset-env,core}
+5. .babelrc 파일 생성
+6. pacakge.json파일 생성 후에 스크립트 파일 수정
+   "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js --delay 2"
+  }
+7. nodemon.json 파일안에 감시할 대상 적을 것.
