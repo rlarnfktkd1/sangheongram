@@ -9,7 +9,7 @@ Prisma 설명
 ## User Stories
 
 - [x] Create account
-- [ ] Request Secret
+- [x] Request Secret
 - [ ] Confirm Secret (Login)
 - [ ] Log in - Page 처음 접속시 이메일 입력, 사용자의 이메일로 비밀값 전송, nodemailer이용
 - [ ] Like / Unlike a photo
