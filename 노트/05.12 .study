@@ -46,3 +46,5 @@ graphql 파잃만 작성하면 resolver도 생성되고, 서버도 만들어지�
 4. @default 같은 것들은 graphql에서는 지원 안한다. prisma에서만 지원함 따라서 
  - models.graphql 생성 후 datamodel.prisma내용 복사 후에 @관련내용 지워준다. 그리고 api폴더 밑으로 이동
 ※ prisma 파일 추가시에 항상 graphql에도 복사 붙여넣기 해준다.
+
+utils.js와 words.js파일 만들고 random word generator생성
