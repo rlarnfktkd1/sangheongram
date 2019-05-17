@@ -38,3 +38,6 @@
 
 
  {"Authorization": "Bearer [Token]"}
+
+
+관계 설정으로 해당 내용 삭제시 같이 삭제되게 할 수 있다. @relation이용
